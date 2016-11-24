@@ -1,6 +1,6 @@
 ﻿namespace PrviProjekatGit
 {
-    partial class Form1
+    partial class Prezentacija
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // Prezentacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "Prezentacija";
+            this.Text = "Prezentacija";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Prezentacija_FormClosed);
+            this.Load += new System.EventHandler(this.Prezentacija_Load);
             this.ResumeLayout(false);
 
         }
@@ -45,4 +46,3 @@
         #endregion
     }
 }
-
