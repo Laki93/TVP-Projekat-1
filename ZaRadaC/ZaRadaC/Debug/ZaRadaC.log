@@ -1,0 +1,6 @@
+﻿  Program.c
+c:\users\car lazar\documents\github\tvp-projekat-1\zaradac\zaradac\program.c(18): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\users\car lazar\documents\github\tvp-projekat-1\zaradac\zaradac\program.c(52): warning C4013: 'free' undefined; assuming extern returning int
+c:\users\car lazar\documents\github\tvp-projekat-1\zaradac\zaradac\program.c(56): warning C4013: 'system' undefined; assuming extern returning int
+  ZaRadaC.vcxproj -> C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\ZaRadaC\Debug\ZaRadaC.exe
+  ZaRadaC.vcxproj -> C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\ZaRadaC\Debug\ZaRadaC.pdb (Partial PDB)

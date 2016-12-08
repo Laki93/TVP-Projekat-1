@@ -51,6 +51,7 @@
             // buttonCnc
             // 
             this.buttonCnc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonCnc.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCnc.Location = new System.Drawing.Point(194, 204);
             this.buttonCnc.Name = "buttonCnc";
             this.buttonCnc.Size = new System.Drawing.Size(75, 23);
@@ -112,6 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCnc;
             this.ClientSize = new System.Drawing.Size(344, 304);
             this.Controls.Add(this.checkBoxShwPass);
             this.Controls.Add(this.labelPass);
@@ -120,6 +122,8 @@
             this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.buttonCnc);
             this.Controls.Add(this.buttonReg);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Register";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);

@@ -10,3 +10,5 @@ C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatG
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.Administracija.resources
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.Register.resources
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.Prezentacija.resources
+C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.NoviFilmForma.resources
+C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.NovaSalaForma.resources
