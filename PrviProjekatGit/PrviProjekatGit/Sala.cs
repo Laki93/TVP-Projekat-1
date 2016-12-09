@@ -35,6 +35,8 @@ namespace PrviProjekatGit
         public string Naziv { get { return naziv; } }
         public int ID { get { return id; } }
         public int BrojMesta { get { return brojMesta; } }
+        public int Redovi { get { return brojRedova; } }
+        public int Kolone { get { return brojKolona; } }
 
         public override string ToString()
         {

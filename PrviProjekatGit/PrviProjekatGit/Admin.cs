@@ -9,7 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 namespace PrviProjekatGit
 {
     [Serializable]
-    class Admin
+    public class Admin
     {
         public List<Film> listaFilmova;
         public List<Sala> listaSala;

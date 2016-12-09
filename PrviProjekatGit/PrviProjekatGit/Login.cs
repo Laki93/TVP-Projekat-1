@@ -47,7 +47,7 @@ namespace PrviProjekatGit
                     if (String.Compare(acc, izFajla) == 0)
                     {
 
-                        Prezentacija x = new Prezentacija();
+                        Prezentacija x = new Prezentacija(textBoxUsername.Text);
                         x.Show();
                         this.Hide();
                         file.Close();

@@ -88,7 +88,14 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="RezervacijaKarata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervacijaKarata.Designer.cs">
+      <DependentUpon>RezervacijaKarata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sala.cs" />
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Administracija.resx">
       <DependentUpon>Administracija.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +122,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezervacijaKarata.resx">
+      <DependentUpon>RezervacijaKarata.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

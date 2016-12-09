@@ -1,7 +1,6 @@
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\bin\Debug\PrviProjekatGit.exe.config
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\bin\Debug\PrviProjekatGit.exe
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\bin\Debug\PrviProjekatGit.pdb
-C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.csprojResolveAssemblyReference.cache
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.Login.resources
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.Properties.Resources.resources
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.csproj.GenerateResource.Cache
@@ -12,3 +11,5 @@ C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatG
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.Prezentacija.resources
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.NoviFilmForma.resources
 C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.NovaSalaForma.resources
+C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.csprojResolveAssemblyReference.cache
+C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\obj\Debug\PrviProjekatGit.RezervacijaKarata.resources

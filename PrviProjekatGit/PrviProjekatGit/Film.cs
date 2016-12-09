@@ -9,8 +9,11 @@ namespace PrviProjekatGit
     [Serializable]
     public class Film 
     {
+        public bool ocenjen;
         public static int brojac = 0;
         private int id;
+        public int ukupnaOcena = 0;
+        public int brojOcenjivanja = 0;
         private string naziv;
         private string zanr;
         private string opis;
@@ -21,6 +24,7 @@ namespace PrviProjekatGit
             id = ++brojac;
             naziv = zanr = opis = "";
             ocena = 0;
+            ocenjen = false;
         }
 
         public Film(string _naziv,string _zanr,string _opis)
@@ -30,6 +34,7 @@ namespace PrviProjekatGit
             zanr = _zanr;
             opis = _opis;
             ocena = 0;
+            ocenjen = false;
         }
 
         public string Naziv { get { return naziv; } }

@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 namespace PrviProjekatGit
 {
     [Serializable]
-    class Karta
+    public class Karta
     {
         public static int brojac = 0;
         private int id;
         private int cena;
         private Film film;
         private Sala sala;
-        private int sediste;
+        public int sediste;
 
-        Karta()
+        public Karta()
         {
             id = ++brojac;
             film = new Film();
@@ -25,7 +25,7 @@ namespace PrviProjekatGit
             cena = 0;
         }
 
-        Karta(Film _film,Sala _sala,int _sediste,int _cena)
+        public Karta(Film _film,Sala _sala,int _sediste,int _cena)
         {
             id = ++brojac;
             film = _film;
