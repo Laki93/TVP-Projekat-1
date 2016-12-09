@@ -13,8 +13,8 @@ namespace PrviProjekatGit
         private int id;
         private string naziv;
         private int brojMesta;
-        private int brojRedova;
-        private int brojKolona;
+        public int brojRedova;
+        public int brojKolona;
 
         public Sala()
         {

@@ -46,7 +46,8 @@ namespace PrviProjekatGit
 
         public override string ToString()
         {
-            return id+ " | "+naziv ;
+            return "ID:"+id + " | Naziv:" + naziv;
+
         }
 
         public string Ispisi()

@@ -119,7 +119,7 @@ namespace PrviProjekatGit
             listBoxFilmovi.Height = tabControl.Height - 50;
             listBoxFilmovi.Width = tabControl.Width - buttonFilmAdd.Width - 30;
 
-            listBoxSale.Height = tabControl.Height - 50;
+            listBoxSale.Height = tabControl.Height - 80;
             listBoxSale.Width = tabControl.Width - buttonFilmAdd.Width - 30;
 
         }

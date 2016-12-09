@@ -51,7 +51,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 349F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 324F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(320, 324);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -166,6 +166,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "RezervacijaKarata";
             this.Text = "RezervacijaKarata";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RezervacijaKarata_FormClosing);
             this.Load += new System.EventHandler(this.RezervacijaKarata_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.RezervacijaKarata_Paint);
             this.panel1.ResumeLayout(false);

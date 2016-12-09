@@ -41,7 +41,7 @@ namespace PrviProjekatGit
 
         public override string ToString()
         {
-            return id + " | " + sediste + " | " + film.Naziv + " | " + sala.Naziv;
+            return "ID:"+id + " | Sediste:" + sediste + " | Naziv filma:" + film.Naziv + " | Naziv sale:" + sala.Naziv;
         }
     }
 }

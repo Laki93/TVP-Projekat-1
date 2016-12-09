@@ -46,6 +46,8 @@ namespace PrviProjekatGit
                 btn.Click += Btn_Click;
                 nizBatona[i] = btn;
             }
+
+           
         }
 
         public void BtnCheck()
@@ -57,7 +59,7 @@ namespace PrviProjekatGit
                 buttonKupi.Enabled = true;
 
             //Oceni Dugme
-            if (user.mojeKarte.Count == 0 || textBoxOcena.Text.Length == 0 || user.mojiFilmovi.ocenjen == true)
+            if (user.mojeKarte.Count == 0 || textBoxOcena.Text.Length == 0 || user.mojiFilmovi.ocenjen == true || int.Parse(textBoxOcena.Text)==0)
                 buttonOceni.Enabled = false;
             else
                 buttonOceni.Enabled = true;
@@ -91,23 +93,23 @@ namespace PrviProjekatGit
 
             }
 
-            tableLayoutPanel1.ColumnCount = projekcija.getSala.Kolone;
+            tableLayoutPanel1.ColumnCount = projekcija.getSala.brojKolona;
             tableLayoutPanel1.ColumnStyles.Clear();
-            for (int i = 0; i < projekcija.getSala.Kolone; i++)
+            for (int i = 0; i < projekcija.getSala.brojKolona; i++)
                 tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F / projekcija.getSala.Kolone));
 
-            tableLayoutPanel1.RowCount = projekcija.getSala.Redovi;
+            tableLayoutPanel1.RowCount = projekcija.getSala.brojRedova;
             tableLayoutPanel1.RowStyles.Clear();
-            for (int i = 0; i < projekcija.getSala.Redovi; i++)
+            for (int i = 0; i < projekcija.getSala.brojRedova; i++)
                 tableLayoutPanel1.RowStyles.Add(new ColumnStyle(SizeType.Percent, 100F / projekcija.getSala.Redovi));
 
 
             tableLayoutPanel1.Controls.AddRange(nizBatona);
-            for (int i = 0; i < projekcija.getSala.Redovi; i++)
-                for (int j = 0; j < projekcija.getSala.Kolone; j++)
+            for (int i = 0; i < projekcija.getSala.brojRedova; i++)
+                for (int j = 0; j < projekcija.getSala.brojKolona; j++)
                     for (int k = 0; k < projekcija.kupljenaMesta.Count; k++)
-                        if (tableLayoutPanel1.GetControlFromPosition(i, j).Text == projekcija.kupljenaMesta[k].ToString())
-                        { tableLayoutPanel1.GetControlFromPosition(i, j).Enabled = false;}
+                        if (tableLayoutPanel1.GetControlFromPosition(j, i).Text == projekcija.kupljenaMesta[k].ToString())
+                        { tableLayoutPanel1.GetControlFromPosition(j, i).Enabled = false;}
 
             NadjiPopunjena();
                     
@@ -141,11 +143,11 @@ namespace PrviProjekatGit
             user.mojiFilmovi = new Film();
             for (int i = 0; i < projekcija.getSala.Redovi; i++)
                 for (int j = 0; j < projekcija.getSala.Kolone; j++)
-                { if (tableLayoutPanel1.GetControlFromPosition(i, j).BackColor == Color.Red)
+                { if (tableLayoutPanel1.GetControlFromPosition(j, i).BackColor == Color.Red)
                     {
-                        obelezeni[k] = int.Parse(((Button)tableLayoutPanel1.GetControlFromPosition(i, j)).Text);
+                        obelezeni[k] = int.Parse(((Button)tableLayoutPanel1.GetControlFromPosition(j, i)).Text);
                         k++;
-                        tableLayoutPanel1.GetControlFromPosition(i, j).Enabled = false;
+                        tableLayoutPanel1.GetControlFromPosition(j, i).Enabled = false;
                     }
                 }
             for(int i =0; i < admin.listaKarti.Count;i++)
@@ -182,12 +184,17 @@ namespace PrviProjekatGit
         private void NadjiPopunjena()
         {
             popunjenaMesta = 0;
-            for (int i = 0; i < projekcija.getSala.Redovi; i++)
-                for (int j = 0; j < projekcija.getSala.Kolone; j++)
+            for (int i = 0; i < projekcija.getSala.brojRedova; i++)
+                for (int j = 0; j < projekcija.getSala.brojKolona; j++)
                 {
-                    if (tableLayoutPanel1.GetControlFromPosition(i, j).Enabled == false) popunjenaMesta++;
+                    if (tableLayoutPanel1.GetControlFromPosition(j, i).Enabled == false) popunjenaMesta++;
                 }
             labelPuno.Text = "Popunjeno  " + popunjenaMesta * 1.0 / projekcija.getSala.BrojMesta * 100.0 + "% sale";
+        }
+
+        private void RezervacijaKarata_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

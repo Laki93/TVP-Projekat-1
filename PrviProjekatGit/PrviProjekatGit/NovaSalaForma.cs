@@ -44,7 +44,7 @@ namespace PrviProjekatGit
 
         private void textBoxNaziv_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxNaziv.Text.Trim().Length == 0 || textBoxRedova.Text.Trim().Length == 0 || textBoxKolona.Text.Trim().Length == 0)
+            if (textBoxNaziv.Text.Trim().Length == 0 || textBoxRedova.Text.Trim().Length == 0 || textBoxKolona.Text.Trim().Length == 0 || (int.Parse(textBoxRedova.Text) == 0) || (int.Parse(textBoxKolona.Text) == 0))
                 buttonOk.Enabled = false;
             else buttonOk.Enabled = true;
         }
@@ -55,6 +55,9 @@ namespace PrviProjekatGit
                 e.Handled = true;
         }
 
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

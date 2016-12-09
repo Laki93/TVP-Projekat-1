@@ -34,30 +34,26 @@ namespace PrviProjekatGit
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            String acc = textBoxUsername.Text + " " + textBoxPassword.Text;
-            String izFajla;
-            if (acc == "admin admin") 
-            { Administracija y = new Administracija();
+            String acc = textBoxUsername.Text;
+
+            if (acc == "admin")
+            {
+                Administracija y = new Administracija();
                 y.Show();
                 this.Hide();
             }
-            else{
-                System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Car Lazar\Documents\GitHub\TVP-Projekat-1\PrviProjekatGit\PrviProjekatGit\acc.txt");
-                while ((izFajla = file.ReadLine()) != null)
-                    if (String.Compare(acc, izFajla) == 0)
-                    {
-
-                        Prezentacija x = new Prezentacija(textBoxUsername.Text);
+            else if (acc.Trim().Length == 0)
+            {
+                MessageBox.Show("Unesite username.");
+            }
+            else { 
+            Prezentacija x = new Prezentacija(textBoxUsername.Text);
                         x.Show();
                         this.Hide();
-                        file.Close();
                         return;
-                    }
-                file.Close();
-                if (izFajla == null)
-                    MessageBox.Show("Pogresan username ili password.");
-            }
+                    }              
         }
+        
 
         private void labelReg_Click(object sender, EventArgs e)
         {

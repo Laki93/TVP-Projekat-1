@@ -22,6 +22,7 @@ namespace PrviProjekatGit
             admin = new Admin();
             user = new User();
             labelUsername.Text = username;
+            user.username = username;
             if (File.Exists("admin.txt"))
             {
                 BinaryFormatter bf = new BinaryFormatter();
